@@ -12,6 +12,7 @@
                     <option>Cédula de ciudadanía</option>
                     <option>Tarjeta de Indentidad</option>
                 </select>
+                @error('tipo_identificacion') <span class="text-red-500">{{ $message }}</span>@enderror
                 <input name="numero_identificacion" class="form-input flex-1 block w-full rounded-none rounded-r-md focus:shadow-outline-orange focus:border-orange-100 transition duration-150 ease-in-out sm:text-sm sm:leading-5" placeholder="123456789" wire:model="numero_identificacion">
                 @error('numero_identificacion') <span class="text-red-500">{{ $message }}</span>@enderror
                 </div>
